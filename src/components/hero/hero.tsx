@@ -1,5 +1,4 @@
 import Carousel from "react-multi-carousel";
-import img from "../../assets/images/img-1.png";
 
 const Hero = () => {
   const responsive = {
@@ -7,7 +6,10 @@ const Hero = () => {
       breakpoint: { max: 3000, min: 1024 },
       items: 6,
     },
-
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 3,
+    },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 2,
@@ -38,7 +40,7 @@ const Hero = () => {
           arrows={false}
         >
           {data.map((item) => (
-            <img src={item.img} />
+            <img className="px-2" src={item.img} alt="nfts" />
           ))}
         </Carousel>
       </div>
