@@ -39,8 +39,8 @@ const Hero = () => {
           infinite
           arrows={false}
         >
-          {data.map((item) => (
-            <img className="px-2" src={item.img} alt="nfts" />
+          {data.map((item, idx) => (
+            <img key={idx} className="px-2" src={item.img} alt="nfts" />
           ))}
         </Carousel>
       </div>
