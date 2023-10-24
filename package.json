@@ -11,7 +11,10 @@
     "preview": "vite preview"
   },
   "lint-staged": {
-    "*.ts": ["prettier --cache --fix", "git add"]
+    "*.ts": [
+      "prettier --cache --fix",
+      "git add"
+    ]
   },
   "husky": {
     "hooks": {
@@ -19,7 +22,6 @@
     }
   },
   "dependencies": {
-    "prettier": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
@@ -41,6 +43,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^15.0.2",
     "postcss": "^8.4.31",
+    "prettier": "^3.0.3",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
