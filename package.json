@@ -11,7 +11,7 @@
     "preview": "vite preview"
   },
   "lint-staged": {
-    "*.ts": ["eslint --single-quote --write", "git add"]
+    "*.ts": ["prettier --cache --fix", "git add"]
   },
   "husky": {
     "hooks": {
